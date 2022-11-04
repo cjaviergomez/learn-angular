@@ -1,3 +1,20 @@
 mat-slider {
-  width: 300px;
+	width: 300px;
+}
+
+.example-spacer {
+	flex: 1 1 auto;
+}
+
+.container {
+	width: 100%;
+	height: calc(100% - 64px);
+}
+
+.sidenav-content {
+	padding: 16px;
+}
+
+.sidenav {
+	padding: 20px;
 }

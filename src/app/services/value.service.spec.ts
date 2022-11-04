@@ -1,10 +1,17 @@
+import { TestBed } from '@angular/core/testing';
 import { ValueService } from './value.service';
 
-fdescribe('ValueService', () => {
+describe('ValueService', () => {
   let service: ValueService;
 
   beforeEach(() => {
-    service = new ValueService();
+    // With TestBed, we can create a module with a fake service
+    TestBed.configureTestingModule({
+      providers: [ValueService],
+    });
+    service = TestBed.inject(ValueService);
+    // Without TestBed
+    // service = new ValueService();
   });
 
   it('should be created', () => {
