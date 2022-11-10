@@ -1,4 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+:root {
+	--primary-color-800: #4627a0;
+	--primary-color-700: #522da8;
+	--primary-color-600: #5f35b1;
+	--primary-color: #673ab7;
+	--primary-color-400: #7f57c2;
+	--primary-color-300: #9675cd;
+	--primary-color-200: #b39ddb;
+	--primary-color-100: #d1c4e9;
+
+	--secondary-color-800: #ff8f00;
+	--secondary-color-700: #ffa000;
+	--secondary-color-600: #ffb300;
+	--secondary-color: #ffc107;
+	--secondary-color-400: #ffca28;
+	--secondary-color-300: #ffd54f;
+	--secondary-color-200: #ffe082;
+	--secondary-color-100: #ffecb3;
+}

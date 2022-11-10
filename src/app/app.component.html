@@ -1,21 +1,3 @@
-<!-- <div class="content" role="main">
-  <h1>Test</h1>
-  <mat-slider
-    step="10"
-    min="0"
-    max="100"
-    aria-label="units"
-    appSliderValue
-  ></mat-slider>
-  <mat-slider step="10" min="0" max="100" aria-label="units"></mat-slider>
-
-  <img
-    rawSrc="assets/img/facebook.png"
-    alt="Facebook"
-    width="100"
-    height="100"
-  />
-</div>  -->
 <mat-toolbar color="primary">
 	<button
 		mat-icon-button
@@ -37,13 +19,13 @@
 
 <mat-drawer-container class="container">
 	<mat-drawer #drawer class="sidenav">
-		<p>Auto-resizing sidenav</p>
+		<mat-nav-list>
+			<a mat-list-item [routerLink]="['/home']" routerLinkActive="active">Home</a>
+			<a mat-list-item [routerLink]="['/directives']" routerLinkActive="active">Directives</a>
+			<a mat-list-item [routerLink]="['/testing']" routerLinkActive="active">Testing</a>
+		</mat-nav-list>
 	</mat-drawer>
 	<mat-drawer-content class="sidenav-content">
-		<div class="content" role="main">
-			<h1>Test</h1>
-			<mat-slider step="10" min="0" max="100" aria-label="units" appSliderValue></mat-slider>
-			<mat-slider step="10" min="0" max="100" aria-label="units"></mat-slider>
-		</div>
+		<router-outlet></router-outlet>
 	</mat-drawer-content>
 </mat-drawer-container>

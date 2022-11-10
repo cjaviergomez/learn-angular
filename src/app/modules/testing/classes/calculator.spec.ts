@@ -1,26 +1,26 @@
 import { Calculator } from './calculator';
 
 describe('Test for Calculator', () => {
-  let calculator: Calculator;
+	let calculator: Calculator;
 
-  beforeEach(() => {
-    calculator = new Calculator(); // Arrange
-  });
+	beforeEach(() => {
+		calculator = new Calculator(); // Arrange
+	});
 
-  it('should multiply two numbers', () => {
-    // Arrange
-    // Act
-    // Assert
-    expect(calculator.multiply(2, 3)).toBe(6); // Act and Assert
-  });
+	it('should multiply two numbers', () => {
+		// Arrange
+		// Act
+		// Assert
+		expect(calculator.multiply(2, 3)).toBe(6); // Act and Assert
+	});
 
-  it('should divide two numbers', () => {
-    expect(calculator.divide(6, 3)).toBe(2);
-  });
+	it('should divide two numbers', () => {
+		expect(calculator.divide(6, 3)).toBe(2);
+	});
 
-  it('should return null when dividing by zero', () => {
-    expect(calculator.divide(6, 0)).toBeNull();
-  });
+	it('should return null when dividing by zero', () => {
+		expect(calculator.divide(6, 0)).toBeNull();
+	});
 });
 
 // MATCHERS
