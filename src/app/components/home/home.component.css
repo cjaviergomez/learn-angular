@@ -40,9 +40,9 @@ header {
 .home-cards {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 10px;
+	grid-gap: 1em;
 	grid-auto-rows: minmax(100px, auto);
-	margin-top: 1em;
+	margin: 1em;
 }
 
 .home-cards ::ng-deep mat-card-actions {

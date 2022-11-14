@@ -1,10 +1,12 @@
 export interface Topic {
-	title: string;
-	subtitle: string;
-	description: string;
-	urlDocumentation: string;
 	colorBackground: Color;
+	description: string;
+	path: string;
+	show: boolean;
 	started: boolean;
+	subtitle: string;
+	title: string;
+	urlDocumentation: string;
 }
 
 export type Color = '#7f57c2' | '#9675cd' | '#b39ddb' | '#d1c4e9' | '#ffca28' | '#ffd54f' | '#ffe082' | '#ffecb3';

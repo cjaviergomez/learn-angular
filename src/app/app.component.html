@@ -3,6 +3,7 @@
 		mat-icon-button
 		class="example-icon"
 		aria-label="Example icon-button with menu icon"
+		type="button"
 		(click)="drawer.toggle()"
 	>
 		<mat-icon>menu</mat-icon>
@@ -20,9 +21,15 @@
 <mat-drawer-container class="container">
 	<mat-drawer #drawer class="sidenav">
 		<mat-nav-list>
-			<a mat-list-item [routerLink]="['/home']" routerLinkActive="active">Home</a>
-			<a mat-list-item [routerLink]="['/directives']" routerLinkActive="active">Directives</a>
-			<a mat-list-item [routerLink]="['/testing']" routerLinkActive="active">Testing</a>
+			<a
+				mat-list-item
+				[routerLink]="[topic.path]"
+				routerLinkActive="active"
+				*ngFor="let topic of topics"
+				(click)="drawer.toggle()"
+			>
+				{{ topic.title }}
+			</a>
 		</mat-nav-list>
 	</mat-drawer>
 	<mat-drawer-content class="sidenav-content">
