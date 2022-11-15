@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../../utils/material/material.module';
 import { HomeComponent } from './components/home/home.component';
@@ -10,6 +10,7 @@ import { TestingRoutingModule } from './testing.routing';
 
 @NgModule({
 	declarations: [HomeComponent, ProductsComponent, StylePreviewComponent, ProductComponent],
-	imports: [CommonModule, TestingRoutingModule, ReactiveFormsModule, MaterialModule]
+	imports: [CommonModule, TestingRoutingModule, ReactiveFormsModule, MaterialModule],
+	schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class TestingModule {}
