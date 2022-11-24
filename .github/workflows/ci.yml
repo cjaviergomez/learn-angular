@@ -6,13 +6,11 @@ jobs:
     steps:
       - name: Clone
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
       - name: Node Setup
-          uses: actions/setup-node@v2
-          with:
-            node-version: 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
       - name: Install Dependencies
-          run: npm ci
+        run: npm ci
       - name: Run Tests
-          run: ng test test --no-watch --code-coverage --browsers=ChromeHeadlessCI
+        run: ng test test --no-watch --code-coverage --browsers=ChromeHeadlessCI
