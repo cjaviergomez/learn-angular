@@ -4,7 +4,7 @@ jobs:
   unit-test:
     run-on: ubuntu-latest
     steps:
-      - name: Clone repo
+      - name: Clone
           uses: actions/checkout@v2
       - name: Node Setup
           uses: actions/setup-node@v2
