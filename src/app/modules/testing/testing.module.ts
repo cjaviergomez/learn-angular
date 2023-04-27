@@ -7,9 +7,10 @@ import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './components/products/products.component';
 import { StylePreviewComponent } from './components/style-preview/style-preview.component';
 import { TestingRoutingModule } from './testing.routing';
+import { PersonComponent } from './components/person/person.component';
 
 @NgModule({
-	declarations: [HomeComponent, ProductsComponent, StylePreviewComponent, ProductComponent],
+	declarations: [HomeComponent, ProductsComponent, StylePreviewComponent, ProductComponent, PersonComponent],
 	imports: [CommonModule, TestingRoutingModule, ReactiveFormsModule, MaterialModule],
 	schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
