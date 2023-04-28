@@ -1,4 +1,6 @@
 <section class="person-container">
-	<h1>Person</h1>
-	<p>Person works!</p>
+	<h1>Hi, {{ person.name }}</h1>
+	<p>Your height is {{ person.height }}</p>
+
+	<button mat-raised-button color="primary" class="btn-imc" (click)="calcIMC()">IMC: {{ imc }}</button>
 </section>
